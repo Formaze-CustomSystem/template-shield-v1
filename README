@@ -1,0 +1,9 @@
+STEP
+1. First make user filament
+2. Make policy invisble for any user
+3. Update user filament -> hasRole -> super_admin
+4. Make policy back to first setup
+
+If Build New Resource
+1. Terminal : php artisan shield:generate --resource=UserResource
+note: change resource to resource what u just build
