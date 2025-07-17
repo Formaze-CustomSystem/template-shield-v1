@@ -57,6 +57,6 @@ class BackOfficePanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])->databaseNotifications();
     }
 }

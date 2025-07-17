@@ -18,8 +18,8 @@ class UserPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('view_any_data::master::user');
-        // return true;
+        // return $user->can('view_any_data::master::user');
+        return true;
     }
 
     /**
@@ -41,7 +41,8 @@ class UserPolicy
      */
     public function create(User $user): bool
     {
-        return $user->can('create_data::master::user');
+        // return $user->can('create_data::master::user');
+        return true;
     }
 
     /**
@@ -52,8 +53,8 @@ class UserPolicy
      */
     public function update(User $user): bool
     {
-        return $user->can('update_data::master::user');
-        // return true;
+        // return $user->can('update_data::master::user');
+        return true;
     }
 
     /**
